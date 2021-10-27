@@ -6,7 +6,7 @@ CSS framework for Rooftop Community
 * [Scarlet Albornoz]()
 * [Jorgelina Cardozo]()
 * [Federico Martin]()
-* [Mauricio Ferreyra Rizzoli]()
+* [Mauricio Ferreyra Rizzoli](https://github.com/Mauri548)
 * [Pablo Nicolás Alonso]()
 * [Fernando Alba]()
 * [Facundo Alba]()
