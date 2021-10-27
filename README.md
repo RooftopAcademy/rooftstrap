@@ -1,2 +1,2 @@
 # rooftstrap
-CSS framework for Bootstrap Community
+CSS framework for Rooftop Community
