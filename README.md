@@ -3,7 +3,7 @@ CSS framework for Rooftop Community
 
 #### Contributors
 
-* [Scarlet Albornoz]()
+* [Scarlet Albornoz](https://github.com/smichelle05a)
 * [Jorgelina Cardozo]()
 * [Federico Martin]()
 * [Mauricio Ferreyra Rizzoli]()
