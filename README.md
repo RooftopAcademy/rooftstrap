@@ -3,13 +3,13 @@ CSS framework for Rooftop Community
 
 #### Contributors
 
-* [Scarlet Albornoz]()
+* [Scarlet Albornoz](https://github.com/smichelle05a)
 * [Jorgelina Cardozo]()
 * [Federico Martin]()
-* [Mauricio Ferreyra Rizzoli]()
+* [Mauricio Ferreyra Rizzoli](https://github.com/Mauri548)
 * [Pablo Nicolás Alonso]()
 * [Fernando Alba](https://github.com/feralba28)
 * [Facundo Alba]()
 * [Pablo Canale]()
-* [Kevin Au Tam]()
+* [Kevin Au Tam](https://github.com/kevin-dev71)
 * [Alejandro Villafañe](https://github.com/alezvi)
