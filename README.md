@@ -11,5 +11,5 @@ CSS framework for Rooftop Community
 * [Fernando Alba]()
 * [Facundo Alba]()
 * [Pablo Canale]()
-* [Kevin Au Tam]()
+* [Kevin Au Tam](https://github.com/kevin-dev71)
 * [Alejandro Villafañe](https://github.com/alezvi)
