@@ -47,6 +47,10 @@
             box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
         }
 
+        .shadow-hover:hover {
+            box-shadow: 0 7px 16px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+        }
+
         .rounded {
             border-radius: var(--default-rounded);
         }
@@ -99,6 +103,21 @@
                 <p>Se utiliza la clase <pre>shadow-sm</pre></p>
                 <p>Ejemplo: </p>
                 <div class="shadow-sm">Small Shadow</div>
+            </div>
+        </div>
+
+        <!-- Box shadow hover -->
+        <div class="row">
+            <div class="col">
+                <h4>Ejemplo de Box Shadow en evento hover</h4>
+
+                <p>Se utiliza la clase <pre>shadow-hover</pre> para sombrear un elemento al pasar por encima el puntero</p>
+                <p>Ejemplo:</p>
+
+                <div class="shadow-hover">
+                    <h1>Texto de ejemplo</h1>
+                </div>
+
             </div>
         </div>
 
