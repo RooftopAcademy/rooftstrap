@@ -9,6 +9,10 @@
 <body>
     
     <style type="text/css" rel="stylesheet">
+        :root {
+            --default-rounded: 6px;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -32,6 +36,10 @@
 
         .txt-black {
             color: #F60;
+        }
+
+        .rounded {
+            border-radius: var(--default-rounded);
         }
     </style>
 
@@ -57,6 +65,19 @@
                 <p>Ejemplo:</p>
 
                 <p class="txt-black">Et excepteur labore laboris adipisicing ex labore dolore mollit exercitation eiusmod. Aute est eiusmod esse dolore pariatur deserunt aliquip consectetur. Duis incididunt irure excepteur qui reprehenderit et nisi velit et sunt esse.</p>
+            </div>
+        </div>
+
+        <!-- Border Radius -->
+        <div class="row">
+            <div class="col">
+                <h4>Bordes Redondeados</h4>
+
+                <p>El redondeado por defecto del elemento es 6px</p>
+                <p>Se utiliza la clase <pre>rounded</pre></p>
+                <p>Ejemplo:</p>
+
+                <div style="width:200px;height:100px;background-color:#F60;" class="rounded"></div>
             </div>
         </div>
     </div>
