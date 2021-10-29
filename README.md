@@ -4,7 +4,7 @@ CSS framework for Rooftop Community
 #### Contributors
 
 * [Scarlet Albornoz](https://github.com/smichelle05a)
-* [Jorgelina Cardozo]()
+* [Jorgelina Cardozo](https://github.com/jocardozo)
 * [Federico Martin](https://github.com/fl-martin)
 * [Mauricio Ferreyra Rizzoli](https://github.com/Mauri548)
 * [Pablo Nicolás Alonso](https://github.com/Alonso-Pablo)
