@@ -10,12 +10,13 @@
     
     <style type="text/css" rel="stylesheet">
         :root {
+            --padding-base: 12px
             --default-rounded: 6px;
         }
 
         * {
             margin: 0;
-            padding: 0;
+            padding: var(--padding-base);
             box-sizing: border-box;
         }
 
@@ -38,7 +39,11 @@
             color: #F60;
         }
 
-        .shadow-sm {
+        .p-0 {
+            padding: calc(var(--padding-base) * 1.125);
+        }
+
+       .shadow-sm {
             box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
         }
 
@@ -69,6 +74,19 @@
                 <p>Ejemplo:</p>
 
                 <p class="txt-black">Et excepteur labore laboris adipisicing ex labore dolore mollit exercitation eiusmod. Aute est eiusmod esse dolore pariatur deserunt aliquip consectetur. Duis incididunt irure excepteur qui reprehenderit et nisi velit et sunt esse.</p>
+            </div>
+        </div>
+  
+        <!-- Spacing -->
+        <div class="row">
+            <div class="col">
+                <h4>Espaciado</h4>
+
+                <p>El padding por defecto es de 12px</p>
+                <p>Se utiliza la clase <pre>p-0</pre> para dar un padding de 13.5px</p>
+                <p>Ejemplo:</p>
+
+                <p class="p-0">Et excepteur labore laboris adipisicing ex labore dolore mollit exercitation eiusmod. Aute est eiusmod esse dolore pariatur deserunt aliquip consectetur. Duis incididunt irure excepteur qui reprehenderit et nisi velit et sunt esse</p>
             </div>
         </div>
 
