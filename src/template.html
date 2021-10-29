@@ -9,9 +9,13 @@
 <body>
     
     <style type="text/css" rel="stylesheet">
+        :root {
+            --padding-base: 12px
+        }
+
         * {
             margin: 0;
-            padding: 0;
+            padding: var(--padding-base);
             box-sizing: border-box;
         }
 
@@ -33,6 +37,11 @@
         .txt-black {
             color: #F60;
         }
+
+        .p-0 {
+            padding: calc(var(--padding-base) * 1.125);
+        }
+
     </style>
 
     <div class="container">
@@ -57,6 +66,18 @@
                 <p>Ejemplo:</p>
 
                 <p class="txt-black">Et excepteur labore laboris adipisicing ex labore dolore mollit exercitation eiusmod. Aute est eiusmod esse dolore pariatur deserunt aliquip consectetur. Duis incididunt irure excepteur qui reprehenderit et nisi velit et sunt esse.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h4>Texto, Bloque</h4>
+
+                <p>El padding por defecto es de 12px</p>
+                <p>Se utiliza la clase <pre>p-0</pre> para dar un padding de 13.5px</p>
+                <p>Ejemplo:</p>
+
+                <p class="p-0">Et excepteur labore laboris adipisicing ex labore dolore mollit exercitation eiusmod. Aute est eiusmod esse dolore pariatur deserunt aliquip consectetur. Duis incididunt irure excepteur qui reprehenderit et nisi velit et sunt esse</p>
             </div>
         </div>
     </div>
