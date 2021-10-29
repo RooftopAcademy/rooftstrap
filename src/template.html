@@ -9,6 +9,10 @@
 <body>
     
     <style type="text/css" rel="stylesheet">
+        :root {
+            --default-rounded: 6px;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -34,9 +38,12 @@
             color: #F60;
         }
 
-        /* BOX SHADOWS  */
         .shadow-sm {
             box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+        }
+
+        .rounded {
+            border-radius: var(--default-rounded);
         }
     </style>
 
@@ -65,7 +72,7 @@
             </div>
         </div>
 
-        <!-- BOX SHADOWS -->
+        <!-- Box Shadow -->
         <div class="row">
             <div class="col">
                 <h4>Ejemplo de Box Shadow</h4>
@@ -74,6 +81,19 @@
                 <p>Se utiliza la clase <pre>shadow-sm</pre></p>
                 <p>Ejemplo: </p>
                 <div class="shadow-sm">Small Shadow</div>
+            </div>
+        </div>
+
+        <!-- Border Radius -->
+        <div class="row">
+            <div class="col">
+                <h4>Bordes Redondeados</h4>
+
+                <p>El redondeado por defecto del elemento es 6px</p>
+                <p>Se utiliza la clase <pre>rounded</pre></p>
+                <p>Ejemplo:</p>
+
+                <div style="width:200px;height:100px;background-color:#F60;" class="rounded"></div>
             </div>
         </div>
     </div>
