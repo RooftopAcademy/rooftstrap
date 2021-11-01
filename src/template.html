@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <style type="text/css" rel="stylesheet">
         :root {
             --padding-base: 12px
@@ -65,6 +67,14 @@
         .rounded {
             border-radius: var(--default-rounded);
         }
+
+        :root {
+            --success-color: #1F64EB;
+        }
+
+        .link-color {
+            color: var(--success-color);
+        }
     </style>
 
     <div class="container">
@@ -98,13 +108,30 @@
         <!-- Black text -->
         <div class="row">
             <div class="col">
+                <h4>Link</h4>
+
+                <a href="#">El color por defecto del link es es #8ab4f8</a>
+                <p>Se utiliza la clase
+                <pre>link-color</pre>
+                </p>
+                <p>Ejemplo:</p>
+
+                <a class="link-color" href="#">This is a link</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
                 <h4>Texto</h4>
 
                 <p>El color por defecto del texto es #000</p>
-                <p>Se utiliza la clase <pre>text-black</pre></p>
+                <p>Se utiliza la clase
+                <pre>text-black</pre>
+                </p>
                 <p>Ejemplo:</p>
 
-                <p class="txt-black">Et excepteur labore laboris adipisicing ex labore dolore mollit exercitation eiusmod. Aute est eiusmod esse dolore pariatur deserunt aliquip consectetur. Duis incididunt irure excepteur qui reprehenderit et nisi velit et sunt esse.</p>
+                <p class="txt-black">Et excepteur labore laboris adipisicing ex labore dolore mollit exercitation
+                    eiusmod. Aute est eiusmod esse dolore pariatur deserunt aliquip consectetur. Duis incididunt irure
+                    excepteur qui reprehenderit et nisi velit et sunt esse.</p>
             </div>
         </div>
   
@@ -172,4 +199,5 @@
     </div>
 
 </body>
+
 </html>
