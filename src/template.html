@@ -9,9 +9,14 @@
 <body>
     
     <style type="text/css" rel="stylesheet">
+        :root {
+            --padding-base: 12px
+            --default-rounded: 6px;
+        }
+
         * {
             margin: 0;
-            padding: 0;
+            padding: var(--padding-base);
             box-sizing: border-box;
         }
 
@@ -33,12 +38,22 @@
         .txt-black {
             color: #F60;
         }
-        .div-bg-main{
-            height: 10px;
-        }
+      
         .bg-main{
             --color: #E5E5E5;
             background-color: var(--color);
+        }
+      
+        .p-0 {
+            padding: calc(var(--padding-base) * 1.125);
+        }
+
+       .shadow-sm {
+            box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+        }
+
+        .rounded {
+            border-radius: var(--default-rounded);
         }
     </style>
 
@@ -66,7 +81,8 @@
                 <p class="txt-black">Et excepteur labore laboris adipisicing ex labore dolore mollit exercitation eiusmod. Aute est eiusmod esse dolore pariatur deserunt aliquip consectetur. Duis incididunt irure excepteur qui reprehenderit et nisi velit et sunt esse.</p>
             </div>
         </div>
-        <!--Color relleno main-->
+
+        <!-- Background -->
         <div class="row">
             <div class="col">
                 <h4>Color principal de relleno</h4>
@@ -77,6 +93,44 @@
 
                 <div class="bg-main div-bg-main">Main
                 </div>
+            </div>
+        </div>
+  
+        <!-- Spacing -->
+        <div class="row">
+            <div class="col">
+                <h4>Espaciado</h4>
+
+                <p>El padding por defecto es de 12px</p>
+                <p>Se utiliza la clase <pre>p-0</pre> para dar un padding de 13.5px</p>
+                <p>Ejemplo:</p>
+
+                <p class="p-0">Et excepteur labore laboris adipisicing ex labore dolore mollit exercitation eiusmod. Aute est eiusmod esse dolore pariatur deserunt aliquip consectetur. Duis incididunt irure excepteur qui reprehenderit et nisi velit et sunt esse</p>
+            </div>
+        </div>
+
+        <!-- Box Shadow -->
+        <div class="row">
+            <div class="col">
+                <h4>Ejemplo de Box Shadow</h4>
+
+                <p>Por defecto los elementos no tienen shadow</p>
+                <p>Se utiliza la clase <pre>shadow-sm</pre></p>
+                <p>Ejemplo: </p>
+                <div class="shadow-sm">Small Shadow</div>
+            </div>
+        </div>
+
+        <!-- Border Radius -->
+        <div class="row">
+            <div class="col">
+                <h4>Bordes Redondeados</h4>
+
+                <p>El redondeado por defecto del elemento es 6px</p>
+                <p>Se utiliza la clase <pre>rounded</pre></p>
+                <p>Ejemplo:</p>
+
+                <div style="width:200px;height:100px;background-color:#F60;" class="rounded"></div>
             </div>
         </div>
     </div>
