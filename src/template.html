@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <style type="text/css" rel="stylesheet">
+        :root {
+            --padding-base: 12px;
+            --default-rounded: 6px;
+            --success-color: #1F64EB;
+        }
+
         * {
             margin: 0;
-            padding: 0;
+            padding: var(--padding-base);
             box-sizing: border-box;
         }
 
@@ -73,6 +81,7 @@
           background: transparent;
           box-shadow: none;
         }
+        
         #burger-btn-check:checked + .burger-btn>.burger-icon::before {
           transform: rotate(45deg);
           top: 0;
@@ -81,6 +90,43 @@
         #burger-btn-check:checked + .burger-btn>.burger-icon::after {
           transform: rotate(-45deg);
           top: 0
+        }
+
+        .bg-light-grey {
+            background-color: rgb(196, 196, 196);
+        }
+
+        .txt-black {
+            color: #F60;
+        }
+
+        .input{
+            width: 100%;
+        } 
+
+        .bg-main{
+            --color: #E5E5E5;
+            background-color: var(--color);
+        }
+      
+        .p-0 {
+            padding: calc(var(--padding-base) * 1.125);
+        }
+
+       .shadow-sm {
+            box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+        }
+
+        .shadow-hover:hover {
+            box-shadow: 0 7px 16px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+        }
+
+        .rounded {
+            border-radius: var(--default-rounded);
+        }
+
+        .link-color {
+            color: var(--success-color);
         }
     </style>
 
@@ -93,6 +139,130 @@
         <div class="row">
             <div class="col">
                 <h1>Rooftstrap</h1>
+            </div>
+        </div>
+
+        <!-- Light grey background -->
+
+        <div class="row">
+            <div class="col">
+                <h4>Background</h4>
+
+                <p>Aplica gris claro como background-color</p>
+                <p>Se utiliza la clase <pre>bg-light-grey</pre></p>
+                <p>Ejemplo:</p>
+
+                <div class="bg-light-grey">bg-light-grey</div>
+
+            </div>
+
+        </div>
+
+        <!-- Black text -->
+        <div class="row">
+            <div class="col">
+                <h4>Link</h4>
+
+                <a href="#">El color por defecto del link es es #8ab4f8</a>
+                <p>Se utiliza la clase
+                <pre>link-color</pre>
+                </p>
+                <p>Ejemplo:</p>
+
+                <a class="link-color" href="#">This is a link</a>
+            </div>
+        </div>
+  
+        <div class="row">
+            <div class="col">
+                <h4>Texto</h4>
+
+                <p>El color por defecto del texto es #000</p>
+                <p>Se utiliza la clase
+                <pre>text-black</pre>
+                </p>
+                <p>Ejemplo:</p>
+
+                <p class="txt-black">Et excepteur labore laboris adipisicing ex labore dolore mollit exercitation
+                    eiusmod. Aute est eiusmod esse dolore pariatur deserunt aliquip consectetur. Duis incididunt irure
+                    excepteur qui reprehenderit et nisi velit et sunt esse.</p>
+            </div>
+        </div>
+  
+        <div class="row">
+            <div class="col">
+                <h4>Input</h4>
+                <p>Input por defecto</p>
+                <input type="text">
+                <p>Ejemplo de uso</p>
+                <input type="text" class="input">
+            </div>
+        </div>
+  
+        <!-- Background -->
+        <div class="row">
+            <div class="col">
+                <h4>Color principal de relleno</h4>
+
+                <p>El color por defecto del relleno del main es #E5E5E5</p>
+                <p>Se utiliza la clase <pre>bg-main</pre></p>
+                <p>Ejemplo:</p>
+
+                <div class="bg-main div-bg-main">Main
+                </div>
+            </div>
+        </div>
+  
+        <!-- Spacing -->
+        <div class="row">
+            <div class="col">
+                <h4>Espaciado</h4>
+
+                <p>El padding por defecto es de 12px</p>
+                <p>Se utiliza la clase <pre>p-0</pre> para dar un padding de 13.5px</p>
+                <p>Ejemplo:</p>
+
+                <p class="p-0">Et excepteur labore laboris adipisicing ex labore dolore mollit exercitation eiusmod. Aute est eiusmod esse dolore pariatur deserunt aliquip consectetur. Duis incididunt irure excepteur qui reprehenderit et nisi velit et sunt esse</p>
+            </div>
+        </div>
+
+        <!-- Box Shadow -->
+        <div class="row">
+            <div class="col">
+                <h4>Ejemplo de Box Shadow</h4>
+
+                <p>Por defecto los elementos no tienen shadow</p>
+                <p>Se utiliza la clase <pre>shadow-sm</pre></p>
+                <p>Ejemplo: </p>
+                <div class="shadow-sm">Small Shadow</div>
+            </div>
+        </div>
+
+        <!-- Box shadow hover -->
+        <div class="row">
+            <div class="col">
+                <h4>Ejemplo de Box Shadow en evento hover</h4>
+
+                <p>Se utiliza la clase <pre>shadow-hover</pre> para sombrear un elemento al pasar por encima el puntero</p>
+                <p>Ejemplo:</p>
+
+                <div class="shadow-hover">
+                    <h1>Texto de ejemplo</h1>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Border Radius -->
+        <div class="row">
+            <div class="col">
+                <h4>Bordes Redondeados</h4>
+
+                <p>El redondeado por defecto del elemento es 6px</p>
+                <p>Se utiliza la clase <pre>rounded</pre></p>
+                <p>Ejemplo:</p>
+
+                <div style="width:200px;height:100px;background-color:#F60;" class="rounded"></div>
             </div>
         </div>
     </div>
@@ -120,4 +290,5 @@
       </div>
     </div>
 </body>
+
 </html>
