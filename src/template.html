@@ -11,193 +11,67 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="/styles.css"/>
 </head>
 
 <body>
-
-    <style type="text/css" rel="stylesheet">
-        :root {
-            --padding-base: 12px;
-            --default-rounded: 6px;
-            --success-color: #1F64EB;
-            --primary-color: #471CBE;
-            --light-blue: #C7D8FA;
-            --benefit-color: #42A215;
-            --light-green: #E3F1DC;
-        }
-
-        input {
-            border: 1px solid;
-            outline: none;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            line-height: 1.5rem;
-        }
-
-        p::after {
-          content: "\a";
-          white-space: pre;
-          font-family: 'Poppins', sans-serif;
-        }
-
-        .container,
-        .row {
-            width: 100%;
-        }
-
-        .row {
-            display: flex;
-        }
-
-        .container,
-        .row,
-        .col {
-            padding: var(--padding-base);
-        }
-
-        .burger-btn {
-            height: 2rem;
-            width: 2rem;
-            border: 1px solid black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            border-radius: .5rem;
-        }
-
-        .burger-icon {
-            position: relative;
-            width: .75rem;
-            height: 2px;
-            background-color: black;
-            border-radius: 5px;
-        }
-
-        .burger-icon::before,
-        .burger-icon::after {
-            content: '';
-            position: absolute;
-            width: .75rem;
-            height: 2px;
-            background-color: black;
-            border-radius: 5px;
-            transition: all .5s ease-in-out;
-        }
-
-        .burger-icon::before {
-            transform: translateY(-.4rem);
-        }
-
-        .burger-icon::after {
-            transform: translateY(.4rem);
-        }
-
-        /* ANIMATION */
-        #burger-btn-check:checked+.burger-btn>.burger-icon {
-            background: transparent;
-            box-shadow: none;
-        }
-
-        #burger-btn-check:checked+.burger-btn>.burger-icon::before {
-            transform: rotate(45deg);
-            top: 0;
-        }
-
-        #burger-btn-check:checked+.burger-btn>.burger-icon::after {
-            transform: rotate(-45deg);
-            top: 0
-        }
-
-        .bg-light-grey {
-            background-color: rgb(196, 196, 196);
-        }
-
-        .bg-light-blue {
-            background-color: var(--light-blue);
-        }
-
-        .bg-light-green {
-            background-color: var(--light-green);
-        }
-
-        .txt-blue {
-            color: var(--success-color);
-        }
-
-        .txt-green {
-            color: var(--benefit-color)
-        }
-
-        .txt-black {
-            color: #000;
-        }
-
-        .txt-grey {
-            color: #4A4A4A;
-        }
-
-        .txt-white {
-            color: #FFF;
-        }
-
-        .txt-center {
-            text-align: center;
-        }
-
-        .active {
-            border-bottom: 4px solid var(--primary-color);
-        }
-      
-        .txt-bold {
-            font-weight: bold;
-        }
-
-        .input {
-            width: 100%;
-            outline: none;
-            border: 1px solid #E5E5E5;
-        }
-
-        .bg-main {
-            --color: #E5E5E5;
-            background-color: var(--color);
-        }
-
-        .p-0 {
-            padding: calc(var(--padding-base) * 1.125);
-        }
-
-        .shadow-sm {
-            box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
-        }
-
-        .shadow-hover:hover {
-            box-shadow: 0 7px 16px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 10%);
-        }
-
-        .rounded {
-            border-radius: var(--default-rounded);
-        }
-
-        .link-color {
-            color: var(--success-color);
-        }
-
-        .grey-border {
-            border: 1px solid #F5F5F5;
-        }
-        
-        .link {
-          text-decoration: none;
-        }
-    </style>
+    <div class="bg-primary p-0 row">
+        <div class="col">
+            LOGO
+        </div>
+        <div class="col">
+            <input type="text" class="input p-0 shadow-sm" placeholder="Estoy buscando...">
+        </div>
+        <div class="col">
+            _ _ _
+        </div>
+    </div>
 
     <div class="container">
+        <div class="row">
+            <div class="col rounded p-0">
+                <a href="" class="link-color">
+                    Ver todas las preguntas
+                </a>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col rounded bg-main p-0">
+                <a href="" class="txt-black">
+                    Autos, Motos y otros
+                </a>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col rounded bg-main p-0">
+                <a href="" class="txt-black">
+                    Cantidad: 
+                        <span class="bold">1</span> 
+                        <span class="txt-gray">(35 disponibles)</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <button class="rounded p-0 bg-primary">Ver todas las tiendas</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <button class="rounded p-0">Costo y tiempo de envio</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col p-0 bg-main rounded">
+                Ver mas categorias
+            </div>
+        </div>
+
         <div class="row">
             <div class="col">
                 <h1>Rooftstrap</h1>
