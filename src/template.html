@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -16,12 +21,27 @@
             --default-rounded: 6px;
             --success-color: #1F64EB;
             --primary-color: #471CBE;
+            --light-blue: #C7D8FA;
+            --benefit-color: #42A215;
+            --light-green: #E3F1DC;
+        }
+
+        input {
+            border: 1px solid;
+            outline: none;
         }
 
         * {
             margin: 0;
-            padding: var(--padding-base);
+            padding: 0;
             box-sizing: border-box;
+            line-height: 1.5rem;
+        }
+
+        p::after {
+          content: "\a";
+          white-space: pre;
+          font-family: 'Poppins', sans-serif;
         }
 
         .container,
@@ -36,7 +56,7 @@
         .container,
         .row,
         .col {
-            padding: 12px;
+            padding: var(--padding-base);
         }
 
         .burger-btn {
@@ -97,16 +117,50 @@
             background-color: rgb(196, 196, 196);
         }
 
+        .bg-light-blue {
+            background-color: var(--light-blue);
+        }
+
+        .bg-light-green {
+            background-color: var(--light-green);
+        }
+
+        .txt-blue {
+            color: var(--success-color);
+        }
+
+        .txt-green {
+            color: var(--benefit-color)
+        }
+
         .txt-black {
-            color: #F60;
+            color: #000;
+        }
+
+        .txt-grey {
+            color: #4A4A4A;
+        }
+
+        .txt-white {
+            color: #FFF;
+        }
+
+        .txt-center {
+            text-align: center;
         }
 
         .active {
             border-bottom: 4px solid var(--primary-color);
         }
+      
+        .txt-bold {
+            font-weight: bold;
+        }
 
         .input {
             width: 100%;
+            outline: none;
+            border: 1px solid #E5E5E5;
         }
 
         .bg-main {
@@ -132,6 +186,14 @@
 
         .link-color {
             color: var(--success-color);
+        }
+
+        .grey-border {
+            border: 1px solid #F5F5F5;
+        }
+        
+        .link {
+          text-decoration: none;
         }
     </style>
 
@@ -200,22 +262,78 @@
 
                 <p>El color por defecto del texto es #000</p>
                 <p>Se utiliza la clase
-                <pre>text-black</pre>
+                <pre>txt-black</pre>
                 </p>
                 <p>Ejemplo:</p>
 
                 <p class="txt-black">Et excepteur labore laboris adipisicing ex labore dolore mollit exercitation
                     eiusmod. Aute est eiusmod esse dolore pariatur deserunt aliquip consectetur. Duis incididunt irure
-                    excepteur qui reprehenderit et nisi velit et sunt esse.</p>
+                    excepteur qui reprehenderit et nisi velit et sunt esse.</p>  
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col" >
+                <p>Se utiliza la clase
+                    <pre>txt-grey</pre>
+                    </p>
+                    <p>Ejemplo:</p>
+                        <p class="txt-grey">Et excepteur labore laboris adipisicing ex labore dolore mollit exercitation
+                        eiusmod. Aute est eiusmod esse dolore pariatur deserunt aliquip consectetur. Duis incididunt irure
+                        excepteur qui reprehenderit et nisi velit et sunt esse.</p> 
+                    </div>    
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col" >
+                <p>Se utiliza la clase
+                    <pre>txt-white</pre>
+                    </p>
+                    <p>Ejemplo:</p>
+            
+                    <div class="bg-light-grey">
+                        <p class="txt-white">Et excepteur labore laboris adipisicing ex labore dolore mollit exercitation
+                        eiusmod. Aute est eiusmod esse dolore pariatur deserunt aliquip consectetur. Duis incididunt irure
+                        excepteur qui reprehenderit et nisi velit et sunt esse.</p> 
+                    </div>    
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col" >
+                <p>Para centrar el texto se utiliza la clase
+                    <pre>txt-center</pre>
+                    </p>
+                    <p>Ejemplo:</p>
+            
+                    <div class="bg-light-grey">
+                        <p class="txt-center">Centrado</p> 
+                    </div>      
             </div>
         </div>
 
         <div class="row">
             <div class="col">
+                <p>Para poner el texto en negrita se utiliza la clase
+                <pre>txt-bold</pre>
+                </p>
+                <p>Ejemplo:</p>
+
+                <p class="txt-bold">Et excepteur labore laboris adipisicing ex labore dolore mollit exercitation
+                    eiusmod. Aute est eiusmod esse dolore pariatur deserunt aliquip consectetur. Duis incididunt irure
+                    excepteur qui reprehenderit et nisi velit et sunt esse.</p>  
+            </div>
+        </div>
+
+        <!-- Input -->
+        <div class="row">
+            <div class="col">
                 <h4>Input</h4>
-                <p>Input por defecto</p>
+                <p>Por defecto, los input poseen el siguiente estilo</p>
                 <input type="text">
-                <p>Ejemplo de uso</p>
+                <p>Se utiliza la clase <pre>input</pre>para aplicar un estilo personalizado</p>
+                <p>Ejemplo:</p>
                 <input type="text" class="input">
             </div>
         </div>
@@ -282,6 +400,54 @@
             </div>
         </div>
 
+        <!-- Text Color Green -->
+        <div class="row">
+            <div class="col">
+                <h4>Color de texto Verde</h4>
+
+                <p>Se utiliza la clase: <pre>txt-green</pre></p>
+                <p>Ejemplo:</p>
+
+                <p class="txt-green">Llega gratis<b>el martes</b></p>
+            </div>
+        </div>
+
+        <!-- Text Color Blue -->
+        <div class="row">
+            <div class="col">
+                <h4>Color de texto Azul</h4>
+
+                <p>Se utiliza la clase: <pre>txt-blue</pre></p>
+                <p>Ejemplo:</p>
+
+                <p class="txt-blue">Agregar al carrito</p>
+            </div>
+        </div>
+
+        <!-- Background Color Light Blue -->
+        <div class="row">
+            <div class="col">
+                <h4>Fondo de color Azul Claro</h4>
+
+                <p>Se utiliza la clase: <pre>bg-light-blue</pre></p>
+                <p>Ejemplo:</p>
+
+                <div style="width:200px;height:100px;" class="bg-light-blue"></div>
+            </div>
+        </div>
+
+        <!-- Background Color Light Green -->
+        <div class="row">
+            <div class="col">
+                <h4>Fondo de color Verde Claro</h4>
+
+                <p>Se utiliza la clase: <pre>bg-light-green</pre></p>
+                <p>Ejemplo:</p>
+
+                <div style="width:200px;height:100px;" class="bg-light-green"></div>
+            </div>
+        </div>
+
         <!-- Border Radius -->
         <div class="row">
             <div class="col">
@@ -313,11 +479,72 @@
             </label>
             <br><br>
             <code>
+        </div>
+      </div>
+      
+      <div class="col">
+        <h4>Menú Hamburgesa</h4>
+        <p>El menú hamburguesa se utiliza en un input checkbox con la clase <code>burger-button</code></p>
+        <p><b>Ejemplo</b></p>
+        <input type="checkbox" name="burger-btn-check" id="burger-btn-check" hidden>
+        <label for="burger-btn-check" class="burger-btn">
+          <span class="burger-icon"></span>
+        </label>
+        <code>
           <span><</span>input type="checkbox" name="burger-btn-check" id="burger-btn-check" hidden> <br>
           <span><</span>label for="burger-btn-check" class="burger-btn"> <br>
           <span><</span>span class="burger-icon"></span> <br>
           <span><</span>/label>
         </code>
+        </div>
+    </div>
+
+    <!-- Gray border -->
+    <div class="row">
+        <div class="col">
+            <h4>Borde color gris</h4>
+
+            <p>La clase <code>grey-border</code> para darle un borde de color gris</p>
+            <p>Ejemplo:</p>
+
+            <input class="grey-border" type="text">
+        </div>
+    </div>
+
+    <!-- Remove Link Underline -->
+    <div class="row">
+      <div class="col">
+        <h4>Remover la decoración de los links</h4>
+        <br>
+        <p>Para remover la decoración de los links se debe utilizar la clase <code>link</code></p>
+        <br>
+        <p><b>Ejemplo</b></p>
+        <br>
+        <a href="#" class="link">Este es un link de ejemplo</a>
+        <br><br>
+        <code>
+          <span><</span>href="#" class="link">Este es un link de ejemplo<span><</span>/a>
+        </code>
+      </div>
+    </div>
+        
+    <!-- Icons -->
+    <div class="row">
+        <div class="col">
+            <h4>Ejemplo: Uso de iconos de fontawesome</h4>
+            <span>Cart:<i class="fas fa-shopping-cart"></i></span>
+            <span>Buscar:<i class="fas fa-search"></i></span>
+            <span>Pin Marker:<i class="fas fa-map-marker-alt"></i></span>
+            <span>Historial:<i class="far fa-clock"></i></span>
+            <span>Home:<i class="fas fa-home"></i></span>
+            <span>Ventas:<i class="fas fa-tag"></i></span>
+            <span>Like:<i class="far fa-heart"></i></span>
+            <span>Liked:<i class="fas fa-heart"></i></span>
+            <span>Fill Star:<i class="fas fa-star"></i></span>
+            <span>Half Filled Star:<i class="fas fa-star-half-alt"></i></span>
+            <span>Star:<i class="far fa-star"></i></span>
+            <span>Arrow:<i class="fas fa-angle-right"></i></span>
+            <span>Enter:<i class="fas fa-arrow-right"></i></span>
         </div>
     </div>
 </body>
