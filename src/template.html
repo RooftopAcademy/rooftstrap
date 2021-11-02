@@ -15,6 +15,7 @@
             --padding-base: 12px;
             --default-rounded: 6px;
             --success-color: #1F64EB;
+            --primary-color: #471CBE;
         }
 
         * {
@@ -38,58 +39,58 @@
             padding: 12px;
         }
 
-        .burger-btn{
-          height: 2rem;
-          width: 2rem;
-          border: 1px solid black;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          cursor: pointer;
-          border-radius: .5rem;
+        .burger-btn {
+            height: 2rem;
+            width: 2rem;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            border-radius: .5rem;
         }
 
-        .burger-icon{
-          position: relative;
-          width: .75rem;
-          height: 2px;
-          background-color: black;
-          border-radius: 5px;
+        .burger-icon {
+            position: relative;
+            width: .75rem;
+            height: 2px;
+            background-color: black;
+            border-radius: 5px;
         }
 
         .burger-icon::before,
         .burger-icon::after {
-          content: '';
-          position: absolute;
-          width: .75rem;
-          height: 2px;
-          background-color: black;
-          border-radius: 5px;
-          transition: all .5s ease-in-out;
+            content: '';
+            position: absolute;
+            width: .75rem;
+            height: 2px;
+            background-color: black;
+            border-radius: 5px;
+            transition: all .5s ease-in-out;
         }
 
-        .burger-icon::before{
-          transform: translateY(-.4rem);
+        .burger-icon::before {
+            transform: translateY(-.4rem);
         }
 
-        .burger-icon::after{
-          transform: translateY(.4rem);
+        .burger-icon::after {
+            transform: translateY(.4rem);
         }
 
         /* ANIMATION */
-        #burger-btn-check:checked + .burger-btn>.burger-icon{
-          background: transparent;
-          box-shadow: none;
-        }
-        
-        #burger-btn-check:checked + .burger-btn>.burger-icon::before {
-          transform: rotate(45deg);
-          top: 0;
+        #burger-btn-check:checked+.burger-btn>.burger-icon {
+            background: transparent;
+            box-shadow: none;
         }
 
-        #burger-btn-check:checked + .burger-btn>.burger-icon::after {
-          transform: rotate(-45deg);
-          top: 0
+        #burger-btn-check:checked+.burger-btn>.burger-icon::before {
+            transform: rotate(45deg);
+            top: 0;
+        }
+
+        #burger-btn-check:checked+.burger-btn>.burger-icon::after {
+            transform: rotate(-45deg);
+            top: 0
         }
 
         .bg-light-grey {
@@ -100,21 +101,25 @@
             color: #F60;
         }
 
-        .input{
-            width: 100%;
-        } 
+        .border-bottom :active {
+            border-bottom: 4px solid var(--primary-color);
+        }
 
-        .bg-main{
+        .input {
+            width: 100%;
+        }
+
+        .bg-main {
             --color: #E5E5E5;
             background-color: var(--color);
         }
-      
+
         .p-0 {
             padding: calc(var(--padding-base) * 1.125);
         }
 
-       .shadow-sm {
-            box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+        .shadow-sm {
+            box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
         }
 
         .shadow-hover:hover {
@@ -149,7 +154,9 @@
                 <h4>Background</h4>
 
                 <p>Aplica gris claro como background-color</p>
-                <p>Se utiliza la clase <pre>bg-light-grey</pre></p>
+                <p>Se utiliza la clase
+                <pre>bg-light-grey</pre>
+                </p>
                 <p>Ejemplo:</p>
 
                 <div class="bg-light-grey">bg-light-grey</div>
@@ -172,7 +179,7 @@
                 <a class="link-color" href="#">This is a link</a>
             </div>
         </div>
-  
+
         <div class="row">
             <div class="col">
                 <h4>Texto</h4>
@@ -188,7 +195,7 @@
                     excepteur qui reprehenderit et nisi velit et sunt esse.</p>
             </div>
         </div>
-  
+
         <div class="row">
             <div class="col">
                 <h4>Input</h4>
@@ -198,31 +205,36 @@
                 <input type="text" class="input">
             </div>
         </div>
-  
+
         <!-- Background -->
         <div class="row">
             <div class="col">
                 <h4>Color principal de relleno</h4>
 
                 <p>El color por defecto del relleno del main es #E5E5E5</p>
-                <p>Se utiliza la clase <pre>bg-main</pre></p>
+                <p>Se utiliza la clase
+                <pre>bg-main</pre>
+                </p>
                 <p>Ejemplo:</p>
 
                 <div class="bg-main div-bg-main">Main
                 </div>
             </div>
         </div>
-  
+
         <!-- Spacing -->
         <div class="row">
             <div class="col">
                 <h4>Espaciado</h4>
 
                 <p>El padding por defecto es de 12px</p>
-                <p>Se utiliza la clase <pre>p-0</pre> para dar un padding de 13.5px</p>
+                <p>Se utiliza la clase
+                <pre>p-0</pre> para dar un padding de 13.5px</p>
                 <p>Ejemplo:</p>
 
-                <p class="p-0">Et excepteur labore laboris adipisicing ex labore dolore mollit exercitation eiusmod. Aute est eiusmod esse dolore pariatur deserunt aliquip consectetur. Duis incididunt irure excepteur qui reprehenderit et nisi velit et sunt esse</p>
+                <p class="p-0">Et excepteur labore laboris adipisicing ex labore dolore mollit exercitation eiusmod.
+                    Aute est eiusmod esse dolore pariatur deserunt aliquip consectetur. Duis incididunt irure excepteur
+                    qui reprehenderit et nisi velit et sunt esse</p>
             </div>
         </div>
 
@@ -232,7 +244,9 @@
                 <h4>Ejemplo de Box Shadow</h4>
 
                 <p>Por defecto los elementos no tienen shadow</p>
-                <p>Se utiliza la clase <pre>shadow-sm</pre></p>
+                <p>Se utiliza la clase
+                <pre>shadow-sm</pre>
+                </p>
                 <p>Ejemplo: </p>
                 <div class="shadow-sm">Small Shadow</div>
             </div>
@@ -243,7 +257,8 @@
             <div class="col">
                 <h4>Ejemplo de Box Shadow en evento hover</h4>
 
-                <p>Se utiliza la clase <pre>shadow-hover</pre> para sombrear un elemento al pasar por encima el puntero</p>
+                <p>Se utiliza la clase
+                <pre>shadow-hover</pre> para sombrear un elemento al pasar por encima el puntero</p>
                 <p>Ejemplo:</p>
 
                 <div class="shadow-hover">
@@ -259,7 +274,9 @@
                 <h4>Bordes Redondeados</h4>
 
                 <p>El redondeado por defecto del elemento es 6px</p>
-                <p>Se utiliza la clase <pre>rounded</pre></p>
+                <p>Se utiliza la clase
+                <pre>rounded</pre>
+                </p>
                 <p>Ejemplo:</p>
 
                 <div style="width:200px;height:100px;background-color:#F60;" class="rounded"></div>
@@ -269,25 +286,25 @@
 
     <!-- Hamburger menu -->
     <div class="row">
-      <div class="col">
-        <h4>Menú Hamburgesa</h4>
-        <br>
-        <p>El menú hamburguesa se utiliza en un input checkbox con la clase <code>burger-button</code></p>
-        <br>
-        <p><b>Ejemplo</b></p>
-        <br>
-        <input type="checkbox" name="burger-btn-check" id="burger-btn-check" hidden>
-        <label for="burger-btn-check" class="burger-btn">
-          <span class="burger-icon"></span>
-        </label>
-        <br><br>
-        <code>
+        <div class="col">
+            <h4>Menú Hamburgesa</h4>
+            <br>
+            <p>El menú hamburguesa se utiliza en un input checkbox con la clase <code>burger-button</code></p>
+            <br>
+            <p><b>Ejemplo</b></p>
+            <br>
+            <input type="checkbox" name="burger-btn-check" id="burger-btn-check" hidden>
+            <label for="burger-btn-check" class="burger-btn">
+                <span class="burger-icon"></span>
+            </label>
+            <br><br>
+            <code>
           <span><</span>input type="checkbox" name="burger-btn-check" id="burger-btn-check" hidden> <br>
           <span><</span>label for="burger-btn-check" class="burger-btn"> <br>
           <span><</span>span class="burger-icon"></span> <br>
           <span><</span>/label>
         </code>
-      </div>
+        </div>
     </div>
 </body>
 
