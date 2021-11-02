@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -101,10 +103,26 @@
         }
 
         .txt-black {
-            color: #F60;
+            color: #000;
         }
 
-        .input{
+        .txt-grey {
+            color: #4A4A4A;
+        }
+
+        .txt-white {
+            color: #FFF;
+        }
+
+        .txt-center {
+            text-align: center;
+        }
+
+        .txt-bold {
+            font-weight: bold;
+        }
+
+        .input {
             width: 100%;
         } 
 
@@ -183,13 +201,67 @@
 
                 <p>El color por defecto del texto es #000</p>
                 <p>Se utiliza la clase
-                <pre>text-black</pre>
+                <pre>txt-black</pre>
                 </p>
                 <p>Ejemplo:</p>
 
                 <p class="txt-black">Et excepteur labore laboris adipisicing ex labore dolore mollit exercitation
                     eiusmod. Aute est eiusmod esse dolore pariatur deserunt aliquip consectetur. Duis incididunt irure
-                    excepteur qui reprehenderit et nisi velit et sunt esse.</p>
+                    excepteur qui reprehenderit et nisi velit et sunt esse.</p>  
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col" >
+                <p>Se utiliza la clase
+                    <pre>txt-grey</pre>
+                    </p>
+                    <p>Ejemplo:</p>
+                        <p class="txt-grey">Et excepteur labore laboris adipisicing ex labore dolore mollit exercitation
+                        eiusmod. Aute est eiusmod esse dolore pariatur deserunt aliquip consectetur. Duis incididunt irure
+                        excepteur qui reprehenderit et nisi velit et sunt esse.</p> 
+                    </div>    
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col" >
+                <p>Se utiliza la clase
+                    <pre>txt-white</pre>
+                    </p>
+                    <p>Ejemplo:</p>
+            
+                    <div class="bg-light-grey">
+                        <p class="txt-white">Et excepteur labore laboris adipisicing ex labore dolore mollit exercitation
+                        eiusmod. Aute est eiusmod esse dolore pariatur deserunt aliquip consectetur. Duis incididunt irure
+                        excepteur qui reprehenderit et nisi velit et sunt esse.</p> 
+                    </div>    
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col" >
+                <p>Para centrar el texto se utiliza la clase
+                    <pre>txt-center</pre>
+                    </p>
+                    <p>Ejemplo:</p>
+            
+                    <div class="bg-light-grey">
+                        <p class="txt-center">Centrado</p> 
+                    </div>      
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <p>Para poner el texto en negrita se utiliza la clase
+                <pre>txt-bold</pre>
+                </p>
+                <p>Ejemplo:</p>
+
+                <p class="txt-bold">Et excepteur labore laboris adipisicing ex labore dolore mollit exercitation
+                    eiusmod. Aute est eiusmod esse dolore pariatur deserunt aliquip consectetur. Duis incididunt irure
+                    excepteur qui reprehenderit et nisi velit et sunt esse.</p>  
             </div>
         </div>
   
@@ -292,6 +364,26 @@
           <span><</span>/label>
         </code>
       </div>
+    </div>
+
+    <!-- Icons -->
+    <div class="row">
+        <div class="col">
+            <h4>Ejemplo: Uso de iconos de fontawesome</h4>
+            <span>Cart:<i class="fas fa-shopping-cart"></i></span>
+            <span>Buscar:<i class="fas fa-search"></i></span>
+            <span>Pin Marker:<i class="fas fa-map-marker-alt"></i></span>
+            <span>Historial:<i class="far fa-clock"></i></span>
+            <span>Home:<i class="fas fa-home"></i></span>
+            <span>Ventas:<i class="fas fa-tag"></i></span>
+            <span>Like:<i class="far fa-heart"></i></span>
+            <span>Liked:<i class="fas fa-heart"></i></span>
+            <span>Fill Star:<i class="fas fa-star"></i></span>
+            <span>Half Filled Star:<i class="fas fa-star-half-alt"></i></span>
+            <span>Star:<i class="far fa-star"></i></span>
+            <span>Arrow:<i class="fas fa-angle-right"></i></span>
+            <span>Enter:<i class="fas fa-arrow-right"></i></span>
+        </div>
     </div>
 </body>
 
