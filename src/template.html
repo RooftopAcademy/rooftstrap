@@ -17,6 +17,11 @@
             --success-color: #1F64EB;
         }
 
+        input {
+            border: 1px solid;
+            outline: none;
+        }
+
         * {
             margin: 0;
             padding: var(--padding-base);
@@ -127,6 +132,10 @@
 
         .link-color {
             color: var(--success-color);
+        }
+
+        .grey-border {
+            border: 1px solid rgba(0,0,0,.07)
         }
     </style>
 
@@ -288,6 +297,18 @@
           <span><</span>/label>
         </code>
       </div>
+    </div>
+
+    <!-- Gray border -->
+    <div class="row">
+        <div class="col">
+            <h4>Borde color gris</h4>
+
+            <p>La clase <code>grey-border</code> para darle un borde de color gris</p>
+            <p>Ejemplo:</p>
+
+            <input class="grey-border" type="text">
+        </div>
     </div>
 </body>
 
