@@ -38,6 +38,59 @@
             padding: 12px;
         }
 
+        .burger-btn{
+          height: 2rem;
+          width: 2rem;
+          border: 1px solid black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          border-radius: .5rem;
+        }
+
+        .burger-icon{
+          position: relative;
+          width: .75rem;
+          height: 2px;
+          background-color: black;
+          border-radius: 5px;
+        }
+
+        .burger-icon::before,
+        .burger-icon::after {
+          content: '';
+          position: absolute;
+          width: .75rem;
+          height: 2px;
+          background-color: black;
+          border-radius: 5px;
+          transition: all .5s ease-in-out;
+        }
+
+        .burger-icon::before{
+          transform: translateY(-.4rem);
+        }
+
+        .burger-icon::after{
+          transform: translateY(.4rem);
+        }
+
+        /* ANIMATION */
+        #burger-btn-check:checked + .burger-btn>.burger-icon{
+          background: transparent;
+          box-shadow: none;
+        }
+        
+        #burger-btn-check:checked + .burger-btn>.burger-icon::before {
+          transform: rotate(45deg);
+          top: 0;
+        }
+
+        #burger-btn-check:checked + .burger-btn>.burger-icon::after {
+          transform: rotate(-45deg);
+          top: 0
+        }
 
         .bg-light-grey {
             background-color: rgb(196, 196, 196);
@@ -45,7 +98,6 @@
 
         .txt-black {
             color: #F60;
-
         }
 
         .input{
@@ -120,6 +172,7 @@
                 <a class="link-color" href="#">This is a link</a>
             </div>
         </div>
+  
         <div class="row">
             <div class="col">
                 <h4>Texto</h4>
@@ -214,6 +267,28 @@
         </div>
     </div>
 
+    <!-- Hamburger menu -->
+    <div class="row">
+      <div class="col">
+        <h4>Menú Hamburgesa</h4>
+        <br>
+        <p>El menú hamburguesa se utiliza en un input checkbox con la clase <code>burger-button</code></p>
+        <br>
+        <p><b>Ejemplo</b></p>
+        <br>
+        <input type="checkbox" name="burger-btn-check" id="burger-btn-check" hidden>
+        <label for="burger-btn-check" class="burger-btn">
+          <span class="burger-icon"></span>
+        </label>
+        <br><br>
+        <code>
+          <span><</span>input type="checkbox" name="burger-btn-check" id="burger-btn-check" hidden> <br>
+          <span><</span>label for="burger-btn-check" class="burger-btn"> <br>
+          <span><</span>span class="burger-icon"></span> <br>
+          <span><</span>/label>
+        </code>
+      </div>
+    </div>
 </body>
 
 </html>
