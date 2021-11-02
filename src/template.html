@@ -24,9 +24,15 @@
 
         * {
             margin: 0;
-            padding: var(--padding-base);
+            padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+            line-height: 1.5rem;
+        }
+
+        p::after {
+          content: "\a";
+          white-space: pre;
+          font-family: 'Poppins', sans-serif;
         }
 
         .container,
@@ -41,7 +47,7 @@
         .container,
         .row,
         .col {
-            padding: 12px;
+            padding: var(--padding-base);
         }
 
         .burger-btn{
@@ -347,16 +353,12 @@
     <div class="row">
       <div class="col">
         <h4>Menú Hamburgesa</h4>
-        <br>
         <p>El menú hamburguesa se utiliza en un input checkbox con la clase <code>burger-button</code></p>
-        <br>
         <p><b>Ejemplo</b></p>
-        <br>
         <input type="checkbox" name="burger-btn-check" id="burger-btn-check" hidden>
         <label for="burger-btn-check" class="burger-btn">
           <span class="burger-icon"></span>
         </label>
-        <br><br>
         <code>
           <span><</span>input type="checkbox" name="burger-btn-check" id="burger-btn-check" hidden> <br>
           <span><</span>label for="burger-btn-check" class="burger-btn"> <br>
