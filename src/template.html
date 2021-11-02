@@ -20,6 +20,9 @@
             --padding-base: 12px;
             --default-rounded: 6px;
             --success-color: #1F64EB;
+            --light-blue: #C7D8FA;
+            --benefit-color: #42A215;
+            --light-green: #E3F1DC;
         }
 
         * {
@@ -106,6 +109,22 @@
 
         .bg-light-grey {
             background-color: rgb(196, 196, 196);
+        }
+
+        .bg-light-blue {
+            background-color: var(--light-blue);
+        }
+
+        .bg-light-green {
+            background-color: var(--light-green);
+        }
+
+        .txt-blue {
+            color: var(--success-color);
+        }
+
+        .txt-green {
+            color: var(--benefit-color)
         }
 
         .txt-black {
@@ -336,6 +355,54 @@
                     <h1>Texto de ejemplo</h1>
                 </div>
 
+            </div>
+        </div>
+
+        <!-- Text Color Green -->
+        <div class="row">
+            <div class="col">
+                <h4>Color de texto Verde</h4>
+
+                <p>Se utiliza la clase: <pre>txt-green</pre></p>
+                <p>Ejemplo:</p>
+
+                <p class="txt-green">Llega gratis<b>el martes</b></p>
+            </div>
+        </div>
+
+        <!-- Text Color Blue -->
+        <div class="row">
+            <div class="col">
+                <h4>Color de texto Azul</h4>
+
+                <p>Se utiliza la clase: <pre>txt-blue</pre></p>
+                <p>Ejemplo:</p>
+
+                <p class="txt-blue">Agregar al carrito</p>
+            </div>
+        </div>
+
+        <!-- Background Color Light Blue -->
+        <div class="row">
+            <div class="col">
+                <h4>Fondo de color Azul Claro</h4>
+
+                <p>Se utiliza la clase: <pre>bg-light-blue</pre></p>
+                <p>Ejemplo:</p>
+
+                <div style="width:200px;height:100px;" class="bg-light-blue"></div>
+            </div>
+        </div>
+
+        <!-- Background Color Light Green -->
+        <div class="row">
+            <div class="col">
+                <h4>Fondo de color Verde Claro</h4>
+
+                <p>Se utiliza la clase: <pre>bg-light-green</pre></p>
+                <p>Ejemplo:</p>
+
+                <div style="width:200px;height:100px;" class="bg-light-green"></div>
             </div>
         </div>
 
