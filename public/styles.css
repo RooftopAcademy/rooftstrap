@@ -12,7 +12,7 @@
 input {
     border: 1px solid;
     outline: none;
-    --line-height: 1.5rem;
+    --line-height: 1.5rem; /* variable local, se usa en línea 34 en p, span y a; debería estar como variable en root */
 }
 
 * {
@@ -34,7 +34,8 @@ a {
     line-height: var(--line-height);
 }
 
-p::after {
+/* repetido */
+p::after { 
     content: "\a";
     white-space: pre;
 }
