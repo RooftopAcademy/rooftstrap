@@ -7,6 +7,7 @@
     --light-blue: #C7D8FA;
     --benefit-color: #42A215;
     --light-green: #E3F1DC;
+    --white: #FFFFFF
 }
 
 input {
@@ -196,6 +197,19 @@ p::after {
 .bg-primary {
     background-color: var(--primary);
 }
+
 .txt-strike{
     text-decoration: line-through;
+}
+
+.bg-container{
+    background-color: var(--white);
+}
+
+.txt-light-grey {
+    color: #4A4A4A;
+}
+
+.bg-black-transparent {
+    background-color: rgba(0,0,0,.3);
 }
