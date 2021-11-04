@@ -196,3 +196,6 @@ p::after {
 .bg-primary {
     background-color: var(--primary);
 }
+.txt-strike{
+    text-decoration: line-through;
+}
