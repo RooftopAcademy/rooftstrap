@@ -1,7 +1,7 @@
-## Title
+# Title
 
-#### Issue: #
+## Issue: #
 
-#### :memo: Resumen o Descripción:
+## :memo: Resumen o Descripción:
 
-#### :camera: Screenshots:
+## :camera: Screenshots:
