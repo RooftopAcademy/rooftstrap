@@ -196,3 +196,7 @@ p::after {
 .bg-primary {
     background-color: var(--primary);
 }
+
+.overflow-scrollx {
+    overflow-x: scroll;
+}
