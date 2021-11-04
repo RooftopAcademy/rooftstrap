@@ -197,6 +197,15 @@ p::after {
 .bg-primary {
     background-color: var(--primary);
 }
+
 .bg-container{
     background-color: var(--white);
+}
+
+.txt-light-grey {
+    color: #4A4A4A;
+}
+
+.bg-black-transparent {
+    background-color: rgba(0,0,0,.3);
 }
