@@ -196,3 +196,19 @@ p::after {
 .bg-primary {
     background-color: var(--primary);
 }
+
+.br-top {
+    border-top: 1px solid #E5E5E5;
+}
+
+.br-left {
+    border-left: 1px solid #E5E5E5;
+}
+
+.br-right {
+    border-right: 1px solid #E5E5E5;
+}
+
+.br-btm {
+    border-bottom: 1px solid #E5E5E5
+}
