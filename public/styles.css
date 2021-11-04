@@ -196,3 +196,7 @@ p::after {
 .bg-primary {
     background-color: var(--primary);
 }
+
+.txt-light-grey {
+    color: #4A4A4A;
+}
