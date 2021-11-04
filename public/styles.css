@@ -145,6 +145,10 @@ p::after {
 .txt-center {
     text-align: center;
 }
+.txt-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 .active {
     border-bottom: 4px solid var(--primary-color);
