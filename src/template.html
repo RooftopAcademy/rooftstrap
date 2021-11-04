@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="/styles.css"/>
+    <link href="/styles.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -419,6 +419,34 @@
             <span>Star:<i class="far fa-star"></i></span>
             <span>Arrow:<i class="fas fa-angle-right"></i></span>
             <span>Enter:<i class="fas fa-arrow-right"></i></span>
+        </div>
+    </div>
+
+    <!-- Individual border -->
+    <div class="row">
+        <div class="col">
+            <h4>Border individuales para cada lado</h4>
+
+            <p>Si queres darle un borde individual puedes usar las siguientes clases:</p>
+            <p> <code>br-top</code> para darle un border superior </p>
+            <p> <code>br-left</code> para darle un border a la izquierda </p>
+            <p> <code>br-right</code> para darle un border a la derecha </p>
+            <p> <code>br-btm</code> para darle un border inferior </p>
+
+            <p class="txt-bold">Ejemplo de uso:</p>
+
+            <p> <code>class="br-top"</code> </p>
+            <div class="col br-top"> Border superior </div>
+
+            <p> <code>class="br-left"</code> </p>
+            <div class="col br-left"> Border a la izquierda </div>
+
+            <p> <code>class="br-right"</code> </p>
+            <div class="col br-right"> Border a la derecha </div>
+
+            <p> <code>class="br-btm"</code> </p>
+            <div class="col br-btm"> Border inferior </div>
+
         </div>
     </div>
 </body>
