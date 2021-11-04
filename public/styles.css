@@ -196,3 +196,7 @@ p::after {
 .bg-primary {
     background-color: var(--primary);
 }
+
+.vh-100 {
+  min-height: 100vh;
+}
