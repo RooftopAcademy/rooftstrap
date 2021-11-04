@@ -7,6 +7,7 @@
     --light-blue: #C7D8FA;
     --benefit-color: #42A215;
     --light-green: #E3F1DC;
+    --white: white;
 }
 
 input {
@@ -195,4 +196,12 @@ p::after {
 
 .bg-primary {
     background-color: var(--primary);
+}
+
+.bg-blue {
+  background-color: var(--success-color);
+}
+
+.bg-white {
+  background-color: var(--white);
 }
