@@ -1,5 +1,3 @@
-pull_request_template.md
-
 ## Title
 
 #### Issue: #
