@@ -198,6 +198,10 @@ p::after {
     background-color: var(--primary);
 }
 
+.txt-strike{
+    text-decoration: line-through;
+}
+
 .bg-container{
     background-color: var(--white);
 }
