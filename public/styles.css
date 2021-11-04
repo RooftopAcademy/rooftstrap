@@ -48,6 +48,9 @@ p::after {
 .col {
     padding: var(--padding-base);
 }
+.padding-none{
+    padding: 0;
+}
 
 .burger-btn {
     height: 2rem;
