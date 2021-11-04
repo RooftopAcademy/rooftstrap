@@ -7,6 +7,7 @@
     --light-blue: #C7D8FA;
     --benefit-color: #42A215;
     --light-green: #E3F1DC;
+    --white: #FFFFFF
 }
 
 input {
@@ -195,6 +196,10 @@ p::after {
 
 .bg-primary {
     background-color: var(--primary);
+}
+
+.bg-container{
+    background-color: var(--white);
 }
 
 .txt-light-grey {
