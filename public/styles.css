@@ -8,6 +8,8 @@
     --benefit-color: #42A215;
     --light-green: #E3F1DC;
     --margin-base: 12px;
+    --light-grey: #EBEBEB;
+    --grey: #CCCCCC;    
     --white: #FFFFFF
 }
 
@@ -34,6 +36,13 @@ p,
 span,
 a {
     line-height: var(--line-height);
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: -var(--light-grey);
+  color: var(--grey);
 }
 
 p::after {
