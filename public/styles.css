@@ -129,6 +129,10 @@ p::after {
     flex-wrap: wrap;
 }
 
+.fd-col {
+    flex-direction: column;
+}
+
 .bg-light-grey {
   background-color: rgb(196, 196, 196);
 }
