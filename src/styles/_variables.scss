@@ -1,3 +1,21 @@
-* {
-    background: "red";
+$orange-red: rgba(255, 100, 42, 1);
+$lavender-blue: rgba(215, 200, 254, 1);
+$han-purple: rgba(95, 37, 253, 1);
+$medium-blue: rgba(71, 28, 190, 1);
+$persian-indigo: rgba(47, 18, 127, 1);
+$cultured: rgba(245, 245, 245, 1);
+$ghost-white: rgba(241, 240, 247, 1);
+$spanish-gray: rgba(158, 158, 158, 1);
+$gunmetal: rgba(40, 50, 60, 1);
+$gunmetal-2: rgba(30, 37, 45, 1);
+
+:root {
+  --primary: $medium-blue;
+  --padding-base: 12px;
+  --default-rounded: 6px;
+  --success-color: #1F64EB;
+  --primary-color: #471CBE; //repetido
+  --light-blue: #C7D8FA;
+  --benefit-color: #42A215;
+  --light-green: #E3F1DC;
 }
