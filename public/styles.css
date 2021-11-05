@@ -219,6 +219,14 @@ p::after {
   font-size: 1.25rem;
 }
 
+.bg-blue {
+  background-color: var(--success-color);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
 .txt-strike{
     text-decoration: line-through;
 }
