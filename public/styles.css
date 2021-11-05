@@ -45,6 +45,7 @@ button[disabled]{
   color: var(--grey);
 }
 
+/* repetido */
 p::after {
   content: '\a';
   white-space: pre;
