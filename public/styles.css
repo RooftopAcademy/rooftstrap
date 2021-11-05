@@ -359,6 +359,9 @@ p::after {
   background-color: var(--white);
 }
 
+.vh-100 {
+  min-height: 100vh;
+
 .txt-strike{
     text-decoration: line-through;
 }
