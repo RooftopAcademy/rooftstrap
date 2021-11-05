@@ -334,6 +334,10 @@ p::after {
   background-color: var(--primary);
 }
 
+.justify-content-sb {
+  justify-content: space-between;
+}
+
 .overflow-scrollx {
   overflow-x: scroll;
 }
