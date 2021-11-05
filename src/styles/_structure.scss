@@ -1,0 +1,76 @@
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+input {
+    border: 1px solid;
+    outline: none;
+    --line-height: 1.5rem;
+}
+
+p::after {
+    content: "\a";
+    white-space: pre;
+}
+
+p,
+span,
+a {
+    line-height: var(--line-height);
+}
+
+.container,
+.row {
+    width: 100%;
+    padding: var(--padding-base);
+}
+
+.col {
+    padding: var(--padding-base);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.active {
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.txt-bold {
+    font-weight: bold;
+}
+
+.input {
+    width: 100%;
+    outline: none;
+    border: 1px solid #E5E5E5;
+}
+
+.p-0 {
+    padding: calc(var(--padding-base) * 1.125);
+}
+
+.rounded {
+    border-radius: var(--default-rounded);
+}
+
+.grey-border {
+    border: 1px solid #F5F5F5;
+}
+
+.link {
+    text-decoration: none;
+}
