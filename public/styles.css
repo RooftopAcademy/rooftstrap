@@ -381,6 +381,7 @@ p::after {
 
 .vh-100 {
   min-height: 100vh;
+}
 
 .txt-strike{
     text-decoration: line-through;
