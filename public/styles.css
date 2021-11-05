@@ -125,6 +125,10 @@ p::after {
   justify-content: space-between;
 }
 
+.fw-wrap {
+    flex-wrap: wrap;
+}
+
 .bg-light-grey {
   background-color: rgb(196, 196, 196);
 }
