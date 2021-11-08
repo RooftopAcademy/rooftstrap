@@ -7,6 +7,9 @@
   --light-blue: #c7d8fa;
   --benefit-color: #42a215;
   --light-green: #e3f1dc;
+  --light-grey: #ebebeb;
+  --grey: #cccccc;
+  --white: #ffffff;
 }
 
 input {
@@ -32,6 +35,13 @@ p,
 span,
 a {
   line-height: var(--line-height);
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: -var(--light-grey);
+  color: var(--grey);
 }
 
 p::after {
