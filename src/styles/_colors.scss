@@ -1,0 +1,7 @@
+@import 'variables';
+
+@each $name, $color in $color-list {
+  .color-#{$name} {
+    color: $color;
+  }
+}
