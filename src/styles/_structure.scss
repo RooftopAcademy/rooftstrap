@@ -8,6 +8,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 input {
     border: 1px solid;
     outline: none;
@@ -77,4 +81,11 @@ a {
 
 .link {
     text-decoration: none;
+}
+
+$fontsizes: 12, 14, 16, 18, 20, 24, 36, 48, 56;
+@each $size in $fontsizes {
+    fz-#{$size} {
+        font-size: #{$size / 10}rem;
+    }
 }
