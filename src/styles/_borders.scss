@@ -15,7 +15,7 @@
 $borders: "top", "bottom", "left", "right";
 
 @each $br in $borders {
-    .br-#{$br} {
+    .border-#{$br} {
         border-#{$br}: 1px solid;
     }
 }
