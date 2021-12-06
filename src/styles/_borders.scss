@@ -1,0 +1,21 @@
+@import "variables";
+
+// border-color
+@each $name, $color in $color-list {
+  .br-#{$name} {
+    border-color: $color;
+  }
+}
+
+// borders
+.border {
+  border: 1px solid;
+}
+
+$borders: "top", "bottom", "left", "right";
+
+@each $br in $borders {
+    .br-#{$br} {
+        border-#{$br}: 1px solid;
+    }
+}
