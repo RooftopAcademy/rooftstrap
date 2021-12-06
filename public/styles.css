@@ -1,16 +1,10 @@
 :root {
-    --primary: #471CBE;
-    --padding-base: 12px;
-    --default-rounded: 6px;
+    
+   --base: 6px;
+    --default-rounded: 3px;    
     --success-color: #1F64EB;
-    --primary-color: #471CBE;
-    --light-blue: #C7D8FA;
-    --benefit-color: #42A215;
-    --light-green: #E3F1DC;
-    --margin-base: 12px;
-    --light-grey: #EBEBEB;
-    --grey: #CCCCCC;    
-    --white: #FFFFFF
+    --primary-color: #471CBE;    
+    --benefit-color: #42A215;   
 }
 
 input {
