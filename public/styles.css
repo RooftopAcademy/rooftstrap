@@ -1,6 +1,6 @@
 :root {
-    
-   --base: 6px;
+    --header-h: 48px;
+    --base: 6px;
     --default-rounded: 3px;    
     --success-color: #1F64EB;
     --primary-color: #471CBE;    
