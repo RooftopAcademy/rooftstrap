@@ -8,6 +8,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 input {
     border: 1px solid;
     outline: none;
@@ -45,6 +49,10 @@ a {
     text-align: center;
 }
 
+.txt-start {
+    text-align: start;
+}
+
 .active {
     border-bottom: 4px solid var(--primary-color);
 }
@@ -75,6 +83,9 @@ a {
     text-decoration: none;
 }
 
-.w-100 {
-    width: 100%;
+$fontsizes: 12, 14, 16, 18, 20, 24, 36, 48, 56;
+@each $size in $fontsizes {
+    fz-#{$size} {
+        font-size: #{$size / 10}rem;
+    }
 }
