@@ -45,6 +45,10 @@ a {
     text-align: center;
 }
 
+.txt-start {
+    text-align: start;
+}
+
 .active {
     border-bottom: 4px solid var(--primary-color);
 }
@@ -73,8 +77,4 @@ a {
 
 .link {
     text-decoration: none;
-}
-
-.w-100 {
-    width: 100%;
 }
