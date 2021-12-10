@@ -1,7 +1,6 @@
 @import "_variables.scss";
-@import "structure";
-@import "flex";
-@import "element-colors";
-@import "hamburger"
+@use "structure";
+@use "flex";
+@use "element-colors";
+@use "hamburger";
 @use "margins-and-paddings"
-
