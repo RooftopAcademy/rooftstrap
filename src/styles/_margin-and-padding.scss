@@ -1,0 +1,123 @@
+$base: 6px;
+
+$base-sizes: (
+  none: 0,
+  1: $base,
+  2: calc($base * 2),
+  3: calc($base * 3),
+  4: calc($base * 4),
+  5: calc($base * 5),
+  6: calc($base * 6)
+);
+
+/* Margins */
+
+@each $size, $value in $base-sizes {
+  .m-#{$size} {
+    margin: $value;
+  }
+}
+
+/* Horizontal Margins */
+
+@each $size, $value in $base-sizes {
+  .mx-#{$size} {
+    margin: 0 $value;
+  }
+}
+
+/* Vertical Margins */
+
+@each $size, $value in $base-sizes {
+  .my-#{$size} {
+    margin: $value 0;
+  }
+}
+
+/* Top Margins */
+
+@each $size, $value in $base-sizes {
+  .mt-#{$size} {
+    margin-top: $value;
+  }
+}
+
+/* Bottom Margins */
+
+@each $size, $value in $base-sizes {
+  .mb-#{$size} {
+    margin-bottom: $value;
+  }
+}
+
+/* Left Margins */
+
+@each $size, $value in $base-sizes {
+  .ml-#{$size} {
+    margin-left: $value;
+  }
+}
+
+/* Right Margins */
+
+@each $size, $value in $base-sizes {
+  .mr-#{$size} {
+    margin-right: $value;
+  }
+}
+
+/* Paddings */
+
+@each $size, $value in $base-sizes {
+  .p-#{$size} {
+    padding: $value;
+  }
+}
+
+/* Horizontal Paddings */
+
+@each $size, $value in $base-sizes {
+  .px-#{$size} {
+    padding: 0 $value;
+  }
+}
+
+/* Vertical Paddings */
+
+@each $size, $value in $base-sizes {
+  .py-#{$size} {
+    padding: $value 0;
+  }
+}
+
+/* Top Paddings */
+
+@each $size, $value in $base-sizes {
+  .pt-#{$size} {
+    margin-top: $value;
+  }
+}
+
+/* Bottom Paddings */
+
+@each $size, $value in $base-sizes {
+  .pb-#{$size} {
+    margin-bottom: $value;
+  }
+}
+
+/* Left Paddings */
+
+@each $size, $value in $base-sizes {
+  .pl-#{$size} {
+    margin-left: $value;
+  }
+}
+
+/* Right Paddings */
+
+@each $size, $value in $base-sizes {
+  .pr-#{$size} {
+    margin-right: $value;
+  }
+}
