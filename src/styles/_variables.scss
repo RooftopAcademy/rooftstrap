@@ -1,23 +1,36 @@
 $color-list: (
-  orange-red: rgba(255, 100, 42, 1),
-  lavender-blue: rgba(215, 200, 254, 1),
-  han-purple: rgba(95, 37, 253, 1),
-  medium-blue: rgba(71, 28, 190, 1),
-  persian-indigo: rgba(47, 18, 127, 1),
-  cultured: rgba(245, 245, 245, 1),
-  ghost-white: rgba(241, 240, 247, 1),
-  spanish-gray: rgba(158, 158, 158, 1),
-  gunmetal: rgba(40, 50, 60, 1),
-  gunmetal-2: rgba(30, 37, 45, 1),
+  orange: rgba(255, 100, 42, 1), //ProductPage-bg-orange
+  primary-lighter: rgba(215, 200, 254, 1), //ChooseItemTitle-bg-light-primary
+  primary-light: rgba(95, 37, 253, 1),
+  primary: rgba(71, 28, 190, 1),
+  primary-dark: rgba(47, 18, 127, 1),
+  black-95: rgba(0, 0, 0, 0.95), //SearchHelp-color-black
+  black-80: rgba(0, 0, 0, 0.8), //root, color de texto por defecto
+  black-45: rgba(0, 0, 0, 0.45), //OffersPage-txt-light-grey ProductList-txt-light-grey color
+  black-40: rgba(0, 0, 0, 0.40), //ChooseItemTitle color ChooseItemTitle-placeholder-gray::placeholder color
+  black-20: rgba(0, 0, 0, 0.2), //SearchHelp-placeholder-light-gray::placeholder color
+  light: rgba(245, 245, 245, 1), //ProductPage-bg-light-grey
+  lightest-grey: rgba(241, 240, 247, 1),
+  lighter-grey: rgba(226, 226, 226, 1), //ProductPage-bg-grey
+  light-background-grey: rgba(216, 216, 216, 1), //switch-bar-s-off
+  background-grey: rgba(215, 200, 254, 1), //ConfirmClassification-bg-main-light ChooseItemTitle-bg-light-primary
+  light-grey: rgba(204, 204, 204, 1), //OffersPage-bg-light-grey
+  grey: rgba(158, 158, 158, 1),
+  dark-grey: rgba(102, 102, 102, 1), //txt-grey-copyright, checkItem bg-color, DefensaConsumidor-container color
+  darker-grey: rgba(173, 173, 173, 1), //ProductPage-txt-light-grey
+  lighter-blue: rgba(227, 237, 251, 1), //InfoVotation-bg-light-blue
+  light-blue: rgba(199, 216, 250, 1), //ChooseItemTitle-btn-disabled:disabled bg-color
+  blue: rgba(52, 131, 250, 1), //InfoVotation-txt-blue
+  success: rgb(31, 100, 235, 1), //switch-bar-s-on background-color Stores-input-selected border
+  benefit: rgb(66, 162, 21, 1), //bg-green
+  light-green: rgb(227, 241, 220), //txt-light-green
+  transparent: transparent,
 );
 
 :root {
-  --primary: $medium-blue;
   --padding-base: 12px;
   --default-rounded: 6px;
-  --success-color: #1f64eb;
-  --primary-color: #471cbe; //repetido
-  --light-blue: #c7d8fa;
-  --benefit-color: #42a215;
-  --light-green: #e3f1dc;
+  @each $name, $color in $color-list{
+    --#{$name}: #{$color}
+  }
 }
