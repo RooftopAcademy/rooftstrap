@@ -1,4 +1,7 @@
 :root {
+  --header-h: 48px;
+  --base: 6px;
+  --default-rounded: 3px;    
   --primary: #471cbe;
   --padding-base: 12px;
   --default-rounded: 6px;
