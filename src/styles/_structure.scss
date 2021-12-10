@@ -1,4 +1,5 @@
 @import 'variables';
+@use "sass:map";
 
 * {
     margin: 0;
@@ -6,6 +7,11 @@
     box-sizing: border-box;
     line-height: 1.5rem;
     font-family: 'Poppins', sans-serif;
+    color: map.get($color-list, "black-80");
+}
+
+html {
+    font-size: 62.5%;
 }
 
 input {
@@ -77,4 +83,11 @@ a {
 
 .link {
     text-decoration: none;
+}
+
+$fontsizes: 12, 14, 16, 18, 20, 24, 36, 48, 56;
+@each $size in $fontsizes {
+    fz-#{$size} {
+        font-size: #{$size / 10}rem;
+    }
 }
