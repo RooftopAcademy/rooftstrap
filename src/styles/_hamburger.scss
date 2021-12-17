@@ -1,17 +1,15 @@
 .burger-btn {
   height: 2rem;
   width: 2rem;
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border-radius: .5rem;
 }
 
-.burger-icon {
+.burger {
   position: relative;
-  width: .75rem;
+  width: 20px;
   height: 2px;
   background-color: black;
   border-radius: 5px;
@@ -19,7 +17,7 @@
   &::after{
     content: '';
     position: absolute;
-    width: .75rem;
+    width: 20px;
     height: 2px;
     background-color: black;
     border-radius: 5px;
@@ -34,7 +32,7 @@
 }
 
 /* ANIMATION */
-#burger-btn-check:checked+.burger-btn>.burger-icon {
+#burger-btn-check:checked+.burger-btn>.burger {
   background: transparent;
   box-shadow: none;
   &::before,
