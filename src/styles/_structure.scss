@@ -99,3 +99,7 @@ $fontsizes: 12, 14, 16, 18, 20, 24, 36, 48, 56;
     width: 100% * #{$multiplier};
   }
 }
+
+.d-none {
+    display: none;
+}
