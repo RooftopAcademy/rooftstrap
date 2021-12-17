@@ -31,6 +31,6 @@ $color-list: (
   --padding-base: 12px;
   --default-rounded: 6px;
   @each $name, $color in $color-list{
-    --#{$name}: #{$color}
+    --#{$name}: #{$color};
   }
 }
