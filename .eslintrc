@@ -1,5 +1,13 @@
 {
+  "extends": ["eslint:recommended", "airbnb-base", "prettier"],
   "ignorePatterns": ["dist", "node_modules"],
+  "env": {
+    "node": true,
+    "jasmine": true,
+    "jquery": true,
+    "browser": true,
+    "es6": true
+  },
   "rules": {
     "prefer-template": "off",
     "no-var": 1,
@@ -18,12 +26,10 @@
       }
     ]
   },
-  "env": {
-    "browser": true,
-    "es6": true
-  },
-  "extends": ["eslint:recommended", "airbnb-base", "prettier"],
   "globals": {
+    "browser": false,
+    "window": true,
+    "document": true,
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
   },
@@ -35,7 +41,7 @@
   "settings": {
     "import/resolver": {
       "webpack": {
-        "config": "config/webpack.common.js"
+        "config": "configuration/webpack.common.js"
       }
     }
   }
