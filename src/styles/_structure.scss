@@ -89,6 +89,10 @@ a {
     overflow: hidden;
 }
 
+.resize-none {
+    resize: none;
+}
+
 $fontsizes: 12, 14, 16, 18, 20, 24, 36, 48, 56;
 @each $size in $fontsizes {
     fz-#{$size} {
@@ -102,4 +106,8 @@ $fontsizes: 12, 14, 16, 18, 20, 24, 36, 48, 56;
     $multiplier: $i / 12;
     width: 100% * #{$multiplier};
   }
+}
+
+.d-none {
+    display: none;
 }

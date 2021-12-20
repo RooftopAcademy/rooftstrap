@@ -21,9 +21,9 @@ $color-list: (
   lighter-blue: rgba(227, 237, 251, 1), //InfoVotation-bg-light-blue
   light-blue: rgba(199, 216, 250, 1), //ChooseItemTitle-btn-disabled:disabled bg-color
   blue: rgba(52, 131, 250, 1), //InfoVotation-txt-blue
-  success: rgb(31, 100, 235, 1), //switch-bar-s-on background-color Stores-input-selected border
-  benefit: rgb(66, 162, 21, 1), //bg-green
-  light-green: rgb(227, 241, 220), //txt-light-green
+  success: rgba(31, 100, 235, 1), //switch-bar-s-on background-color Stores-input-selected border
+  benefit: rgba(66, 162, 21, 1), //bg-green
+  light-green: rgba(227, 241, 220, 1), //txt-light-green
   transparent: transparent,
 );
 
@@ -31,6 +31,6 @@ $color-list: (
   --padding-base: 12px;
   --default-rounded: 6px;
   @each $name, $color in $color-list{
-    --#{$name}: #{$color}
+    --#{$name}: #{$color};
   }
 }
