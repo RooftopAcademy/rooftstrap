@@ -1,17 +1,16 @@
 @import 'variables';
-@use "sass:map";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 1.5rem;
-    font-family: 'Poppins', sans-serif;
-    color: map.get($color-list, "black-80");
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 input {
@@ -96,6 +95,6 @@ $fontsizes: 12, 14, 16, 18, 20, 24, 36, 48, 56;
 @for $i from 1 through 12 {
   col-#{$i} {
     $multiplier: $i / 12;
-    width: 100% * #{$multiplier};
+    width: 100% * $multiplier;
   }
 }
