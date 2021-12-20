@@ -85,6 +85,10 @@ a {
     text-decoration: none;
 }
 
+.resize-none {
+    resize: none;
+}
+
 $fontsizes: 12, 14, 16, 18, 20, 24, 36, 48, 56;
 @each $size in $fontsizes {
     fz-#{$size} {
