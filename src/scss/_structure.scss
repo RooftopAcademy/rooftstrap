@@ -92,13 +92,6 @@ a {
     resize: none;
 }
 
-$fontsizes: 12, 14, 16, 18, 20, 24, 36, 48, 56;
-@each $size in $fontsizes {
-    fz-#{$size} {
-        font-size: #{$size / 10}rem;
-    }
-}
-
 // COLUMNS
 @for $i from 1 through 12 {
   col-#{$i} {
