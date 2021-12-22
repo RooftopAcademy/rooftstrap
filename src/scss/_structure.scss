@@ -112,5 +112,8 @@ $fontsizes: 12, 14, 16, 18, 20, 24, 36, 48, 56;
 }
 
 .circle {
-  border-radius: 50%
+  border-radius: 50%;
+  border: 1px solid;
+  width: 50px;
+  aspect-ratio: 1/1;
 }
