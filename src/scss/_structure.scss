@@ -110,3 +110,7 @@ $fontsizes: 12, 14, 16, 18, 20, 24, 36, 48, 56;
 .d-none {
     display: none;
 }
+
+.shadow-m {
+  box-shadow: 0 0.5rem 0.4rem rgba(0, 0, 0, 0.075);
+}
