@@ -111,6 +111,14 @@ $fontsizes: 12, 14, 16, 18, 20, 24, 36, 48, 56;
     display: none;
 }
 
+
 .shadow-m {
   box-shadow: 0 0.5rem 0.4rem rgba(0, 0, 0, 0.075);
+}
+
+.circle {
+  border-radius: 50%;
+  border: 1px solid;
+  width: 50px;
+  aspect-ratio: 1/1;
 }
