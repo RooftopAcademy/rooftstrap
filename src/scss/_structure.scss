@@ -14,82 +14,82 @@ html {
 }
 
 input {
-    border: 1px solid;
-    outline: none;
-    --line-height: 1.5rem;
+  border: 1px solid;
+  outline: none;
+  --line-height: 1.5rem;
 }
 
 p::after {
-    content: "\a";
-    white-space: pre;
+  content: '\a';
+  white-space: pre;
 }
 
 p,
 span,
 a {
-    line-height: var(--line-height);
+  line-height: var(--line-height);
 }
 
 .container,
 .row {
-    width: 100%;
-    padding: var(--padding-base);
+  width: 100%;
+  padding: var(--padding-base);
 }
 
 .col {
-    padding: var(--padding-base);
+  padding: var(--padding-base);
 }
 
 .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .txt-center {
-    text-align: center;
+  text-align: center;
 }
 
 .txt-start {
-    text-align: start;
+  text-align: start;
 }
 
 .active {
-    border-bottom: 4px solid var(--primary-color);
+  border-bottom: 4px solid var(--primary-color);
 }
 
 .txt-bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .input {
-    width: 100%;
-    outline: none;
-    border: 1px solid #E5E5E5;
+  width: 100%;
+  outline: none;
+  border: 1px solid #e5e5e5;
 }
 
 .p-0 {
-    padding: calc(var(--padding-base) * 1.125);
+  padding: calc(var(--padding-base) * 1.125);
 }
 
 .rounded {
-    border-radius: var(--default-rounded);
+  border-radius: var(--default-rounded);
 }
 
 .grey-border {
-    border: 1px solid #F5F5F5;
+  border: 1px solid #f5f5f5;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .overflow-hidden {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .resize-none {
-    resize: none;
+  resize: none;
 }
 
 // COLUMNS
@@ -101,9 +101,8 @@ a {
 }
 
 .d-none {
-    display: none;
+  display: none;
 }
-
 
 .relative {
   position: relative;
@@ -118,5 +117,41 @@ a {
   border: 1px solid;
   width: 50px;
   aspect-ratio: 1/1;
+}
 
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: -var(--light-grey);
+  color: var(--grey);
+}
+
+.txt-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.shadow-hover:hover {
+  box-shadow: 0 7px 16px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+}
+
+.overflow-scrollx {
+  overflow-x: scroll;
+}
+
+.title {
+  font: 600;
+  font-size: 1.25rem;
+}
+
+.vh-100 {
+  min-height: 100vh;
+}
+
+.txt-strike {
+  text-decoration: line-through;
 }
