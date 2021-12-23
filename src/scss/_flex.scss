@@ -61,3 +61,11 @@ $flex-specific: (
 .grow-1 {
     flex-grow: 1;
 }
+
+.fw-wrap {
+  flex-wrap: wrap;
+}
+
+.fd-col {
+  flex-direction: column;
+}
