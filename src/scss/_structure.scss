@@ -58,26 +58,10 @@ a {
     border-bottom: 4px solid var(--primary-color);
 }
 
-.txt-bold {
-    font-weight: bold;
-}
-
 .input {
     width: 100%;
     outline: none;
     border: 1px solid #E5E5E5;
-}
-
-.p-0 {
-    padding: calc(var(--padding-base) * 1.125);
-}
-
-.rounded {
-    border-radius: var(--default-rounded);
-}
-
-.grey-border {
-    border: 1px solid #F5F5F5;
 }
 
 .link {
@@ -103,7 +87,6 @@ a {
 .d-none {
     display: none;
 }
-
 
 .relative {
   position: relative;
