@@ -78,7 +78,7 @@ a {
 
 // COLUMNS
 @for $i from 1 through 12 {
-  col-#{$i} {
+  .col-#{$i} {
     $multiplier: $i / 12;
     width: 100% * $multiplier;
   }
