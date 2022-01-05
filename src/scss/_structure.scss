@@ -6,7 +6,7 @@
   box-sizing: border-box;
   line-height: 1.5rem;
   font-family: 'Poppins', sans-serif;
-  color: rgba(0, 0, 0, 0.8);
+  color: var(--dark)
 }
 
 html {
@@ -21,12 +21,6 @@ input {
 p::after {
   content: '\a';
   white-space: pre;
-}
-
-p,
-span,
-a {
-  line-height: var(--line-height);
 }
 
 .container,
