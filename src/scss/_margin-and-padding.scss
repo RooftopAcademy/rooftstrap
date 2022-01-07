@@ -94,7 +94,7 @@ $base-sizes: (
 
 @each $size, $value in $base-sizes {
   .pt-#{$size} {
-    margin-top: $value;
+    padding-top: $value;
   }
 }
 
@@ -102,7 +102,7 @@ $base-sizes: (
 
 @each $size, $value in $base-sizes {
   .pb-#{$size} {
-    margin-bottom: $value;
+    padding-bottom: $value;
   }
 }
 
@@ -110,7 +110,7 @@ $base-sizes: (
 
 @each $size, $value in $base-sizes {
   .pl-#{$size} {
-    margin-left: $value;
+    padding-left: $value;
   }
 }
 
@@ -118,6 +118,6 @@ $base-sizes: (
 
 @each $size, $value in $base-sizes {
   .pr-#{$size} {
-    margin-right: $value;
+    padding-right: $value;
   }
 }
