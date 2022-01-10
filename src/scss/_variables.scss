@@ -19,7 +19,7 @@ $color-list: (
 );
 
 :root {
-  --padding-base: 12px;
+  --padding-base: 6px;
   --default-rounded: 6px;
   @each $name, $color in $color-list{
     --#{$name}: #{$color};
