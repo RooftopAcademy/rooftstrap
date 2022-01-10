@@ -26,9 +26,10 @@ p::after {
 .container,
 .row {
   width: 100%;
-  padding: var(--padding-base);
 }
 
+.container,
+.row,
 .col {
   padding: var(--padding-base);
 }
