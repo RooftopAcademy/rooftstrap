@@ -6,7 +6,7 @@
   box-sizing: border-box;
   line-height: 1.5rem;
   font-family: 'Poppins', sans-serif;
-  color: var(--dark)
+  color: var(--dark);
 }
 
 html {
@@ -132,4 +132,18 @@ button[disabled] {
 
 .txt-strike {
   text-decoration: line-through;
+}
+
+.button {
+  width: 100%;
+  border: 1px solid;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 6px;
+}
+
+.card {
+  display: flex;
+  border-radius: 6px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
