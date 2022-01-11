@@ -58,6 +58,10 @@ $flex-specific: (
     }
 }
 
+.d-flex {
+  display: flex;
+}
+
 .grow-1 {
     flex-grow: 1;
 }
