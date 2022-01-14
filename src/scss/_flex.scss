@@ -1,0 +1,75 @@
+$flex-basic: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+);
+
+$flex-space: (
+    around: space-around,
+    between: space-between,
+    evenly: space-evenly,
+);
+
+$flex-specific: (
+    baseline: baseline,
+    stretch: stretch
+);
+
+
+@each $name, $value in $flex-basic {
+    .jc-#{$name} {
+      justify-content: $value;
+    }
+
+    .ai-#{$name} {
+        align-items: $value;
+    }
+
+    .ac-#{$name} {
+        align-content: $value;
+    }
+
+    .as-#{$name} {
+        align-self: $value;
+    }
+}
+
+@each $name, $value in $flex-space {
+    .jc-#{$name} {
+        justify-content: $value;
+    }
+
+    .ac-#{$name} {
+        align-content: $value;
+    }
+}
+
+@each $name, $value in $flex-specific {
+    .ai-#{$name} {
+        align-items: $value;
+    }
+
+    .ac-#{$name} {
+        align-content: $value;
+    }
+
+    .as-#{$name} {
+        align-self: $value;
+    }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.grow-1 {
+    flex-grow: 1;
+}
+
+.fw-wrap {
+  flex-wrap: wrap;
+}
+
+.fd-col {
+  flex-direction: column;
+}

@@ -1,0 +1,43 @@
+@import "variables";
+
+// border-color
+@each $name, $color in $color-list {
+  .br-#{$name} {
+    border-color: $color;
+  }
+}
+
+// borders
+.border {
+  border: 1px solid;
+}
+
+$borders: "top", "bottom", "left", "right";
+
+@each $br in $borders {
+    .border-#{$br} {
+        border-#{$br}: 1px solid;
+    }
+}
+
+$sizes: (
+  xs: 3px,
+  s: 6px,
+  m: 9px,
+  l: 12px,
+  xl: 15px,
+);
+
+@each $size, $value in $sizes {
+  .rounded-#{$size} {
+    border-radius: $value;
+  }
+
+  .rounded-top-#{$size} {
+    border-radius: $value $value 0 0;
+  }
+
+  .rounded-bottom-#{$size} {
+    border-radius: 0 0 $value $value;
+  }
+}

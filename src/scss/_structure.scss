@@ -1,0 +1,152 @@
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--dark);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+input {
+  border: 1px solid;
+  outline: none;
+}
+
+p::after {
+  content: '\a';
+  white-space: pre;
+}
+
+.container,
+.row {
+  width: 100%;
+}
+
+.container,
+.row,
+.col {
+  padding: var(--padding-base);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-start {
+  text-align: start;
+}
+
+.active {
+  border-bottom: 4px solid var(--primary);
+}
+
+.input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #e5e5e5;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.resize-none {
+  resize: none;
+}
+
+// COLUMNS
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    $multiplier: $i / 12;
+    width: 100% * $multiplier;
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.shadow-m {
+  box-shadow: 0 0.5rem 0.4rem rgba(0, 0, 0, 0.075);
+}
+
+.circle {
+  border-radius: 50%;
+  border: 1px solid;
+  width: 50px;
+  aspect-ratio: 1/1;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: -var(--light-grey);
+  color: var(--grey);
+}
+
+.txt-overflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.shadow-hover:hover {
+  box-shadow: 0 7px 16px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+}
+
+.overflow-scrollx {
+  overflow-x: scroll;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.vh-100 {
+  min-height: 100vh;
+}
+
+.txt-strike {
+  text-decoration: line-through;
+}
+
+.button {
+  width: 100%;
+  border: 1px solid;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 6px;
+}
+
+.card {
+  display: flex;
+  border-radius: 6px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}

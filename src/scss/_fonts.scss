@@ -1,0 +1,15 @@
+$fontsizes: 12, 14, 16, 18, 20, 24, 36, 48, 56;
+
+@each $size in $fontsizes {
+    .fs-#{$size} {
+        font-size: #{$size / 10}rem;
+    }
+}
+
+$weights: 200, 300, 400, 500, 600, 800;
+
+@each $weight in $weights {
+  .fw-#{$weight} {
+    font-weight: $weight;
+  }
+}
