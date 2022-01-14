@@ -1,5 +1,5 @@
-# rooftstrap
-CSS framework for Rooftop Community
+# Roofstrap
+CSS framework for Rooftop Community, build it from the top!!
 
 #### Contributors
 
