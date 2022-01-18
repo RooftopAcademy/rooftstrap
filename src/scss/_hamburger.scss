@@ -34,7 +34,7 @@
 }
 
 /* ANIMATION */
-#burger-btn-check:checked+.burger-btn>.burger {
+input[id*="burger"]:checked+.burger-btn>.burger {
   background: transparent;
   box-shadow: none;
   &::before,
