@@ -22,7 +22,8 @@ $base-sizes: (
 
 @each $size, $value in $base-sizes {
   .mx-#{$size} {
-    margin: 0 $value;
+    margin-left: $value;
+    margin-right: $value;
   }
 }
 
@@ -30,7 +31,8 @@ $base-sizes: (
 
 @each $size, $value in $base-sizes {
   .my-#{$size} {
-    margin: $value 0;
+    margin-top: $value;
+    margin-bottom: $value;
   }
 }
 
@@ -78,7 +80,8 @@ $base-sizes: (
 
 @each $size, $value in $base-sizes {
   .px-#{$size} {
-    padding: 0 $value;
+    padding-left: $value;
+    padding-right: $value;
   }
 }
 
@@ -86,7 +89,8 @@ $base-sizes: (
 
 @each $size, $value in $base-sizes {
   .py-#{$size} {
-    padding: $value 0;
+    padding-top: $value;
+    padding-bottom: $value;
   }
 }
 
