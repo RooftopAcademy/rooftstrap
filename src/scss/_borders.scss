@@ -3,7 +3,7 @@
 // border-color
 @each $name, $color in $color-list {
   .br-#{$name} {
-    border-color: $color;
+    border-color: $color !important;
   }
 }
 
